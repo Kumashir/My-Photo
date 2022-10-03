@@ -11,7 +11,6 @@ html{
 }
 
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 img{
     max-width: 100%;
@@ -21,17 +20,57 @@ li{
 }
 a{
     text-decoration: none;
+    color:black;
 }
 .wrapper{
     width: 960px;
+    margin: 0  auto 130px auto;
+    padding: 0 4%;
+    font-size: 0.9rem;
+}
+.section_title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 65px;
 }
 #header{
-    width: 100%;
+    max-width: 960px;
     height: 270px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin:0 auto;
+    padding:0 4%;    
 }
 nav ul{
     display: flex;
+    align-items: center;
+}
+nav li{
+    margin-right: 30px;
+    font-size: 0.9rem;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+.icon{
+    font-size: 1.25rem;
+}
+#mainvisual{
+    margin-bottom: 80px;
+}
+#mainvisual img{
+    max-width: 1920px;
+    width: 100%;
+    height: 420px;
+}
+#about ul{
+
+    margin-bottom: 30px;
+}
+#about li:first-child{
+    margin-bottom: 30px;
+}
+#about p{
+    text-align: justify;
 }
