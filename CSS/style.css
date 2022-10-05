@@ -2,16 +2,13 @@
 /* CSSのリセット（消さないでください） */
 html, body,
 ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,dl,dt,dd, div {
+h1, h2, h3, h4, h5, h6, p,dl,dt,dd,div{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 html{
     font-size: 100%;
-}
-
-body{
 }
 img{
     max-width: 100%;
@@ -45,7 +42,7 @@ a{
 }
 nav ul{
     display: flex;
-    align-items: center;
+    padding: 10px 0;
 }
 nav li{
     margin-right: 30px;
@@ -60,12 +57,12 @@ nav li:last-child{
 #mainvisual{
     margin-bottom: 80px;
 }
-#mainvisual img{
-    max-width: 1920px;
+#mainvisual img {
     width: 100%;
+    max-width: 1920px;
     height: 420px;
     object-fit: cover;
-}
+  }
 #about ul{
     margin-bottom: 30px;
 }
@@ -138,4 +135,41 @@ dl input,textarea{
 }
 small{
     font-size: 0.5rem;
+}
+
+@media screen and (max-width:600px){
+    .wrapper{
+        flex-direction: column;
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+    #header{
+        width:100%;
+        height: auto;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    #works ul{
+        flex-direction: column;
+    }
+    #works li{
+        width: 100%;
+    }
+    #news dl{
+        flex-direction: column;
+    }
+    #news dt{
+        border-bottom:none;
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+    #news dd{
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    #contact dl{
+        flex-direction: column;
+    }
+    #contact 
 }
